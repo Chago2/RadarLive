@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script> <!-- Versión actualizada -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <section class="informacion">
+        <header>
+            <h1 class="titulo">La rueda de la vida en línea</h1>
+            <h3 class="subtitulo">¿Qué es la rueda de la vida?</h3>
+            <p class="texto">La rueda de la vida es una herramienta visual que ayuda en el proceso de análisis y reflexión sobre la vida. Para cada área de la vida debes preguntarte cuál es tu nivel de satisfacción, con el objetivo de visualizar las áreas de tu vida que necesitan atención. El ejercicio consiste en trazar las áreas de tu vida en un círculo, de ahí el nombre de rueda de la vida.</p>
+        </header>
+
+        <section class="instrucciones">
+            <div class="informaicion">
+                <h3>Las categorías de la rueda de la vida</h3>
+                <p>
+                    La rueda de la vida se divide generalmente en 12 categorías. El nombre de cada categoría depende de ti, aquí tienes algunos ejemplos de las categorías más utilizadas:
+                </p>
+                <ul>
+                    <li>Crecimiento personal o Desarrollo personal</li>
+                    <li>Carrera o profesional</li>
+                    <li>Finanzas</li>
+                    <li>Ocio y/o Diversión</li>
+                    <li>Amor y/o Relaciones</li>
+                    <li>Hogar</li>
+                    <li>Salud</li>
+                    <li>Familia y amigos</li>
+                    <li>Vida social</li>
+                    <li>Espiritualidad</li>
+                </ul>
+            </div>    
+
+        <div class="informacion2">
+            <h3>¿Cómo utilizar la rueda de la vida?</h3>
+            <p>
+                Puedes crear tu rueda de la vida siguiendo estos pasos:
+            </p>
+            <ul>
+                <li>Empieza por tomarte un tiempo para pensar cuáles son las áreas más importantes de tu vida (las categorías anteriores pueden darte algunas ideas). Para ello, puedes preguntarte:
+                    <ul>
+                        <li>¿Cúales son las áreas más importantes de mi vida? <br><br>
+                            Ejemplo:
+                            <ul>
+                                <li>
+                                    Educación
+                                </li>
+                                <li>
+                                    Carrera
+                                </li>
+                                <li>
+                                    Familia
+                                </li>
+                                <li>
+                                    Independencia financiera
+                                </li>
+                                <li>
+                                    Expresión artística
+                                </li>
+                                <li>
+                                    Fitness
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>  
+                </li>
+            </ul>
+            <p>
+                                Puedes utilizar una combinación de las preguntas anteriores, la intención es reflexionar sobre cuáles son las prioridades en tu vida.
+                            </p>
+
+            <ul>
+                <li>Ahora puedes editar los campos de abajo añadiendo las categorías que elijas como prioridades.</li>
+                <li>Es normal que de vez en cuando tengamos que dedicar más atención a unas áreas que a otras. El objetivo de la rueda de la vida es intentar encontrar un equilibrio en cada área.</li>
+            </ul>
+            <p>
+                Al lado de cada categoría puedes elegir un número del 1 al 10 (si lo prefieres, también puedes cambiar el color de cada categoría). Para cada categoría, piensa en el grado de dedicación que has tenido a la categoría en cuestión, en una escala de 0 a 10, donde 0 es el nivel más bajo de dedicación y 10 el más alto.
+            </p>
+        </div>
+    </section>
+
+    <section class="form_radar">
+            <form id="formulario">
+                <div>
+                    <input type="text" id="dato1_nombre" placeholder="Ingrese nombre del valor" value="Espiritualidad">
+                    <input type="number" id="dato1_valor" placeholder="Ingrese un valor del 1 al 10">
+                </div>
+                <div>
+                    <input type="text" id="dato2_nombre" placeholder="Ingrese nombre del valor" value="Salud">
+                    <input type="number" id="dato2_valor" placeholder="Ingrese un valor del 1 al 10">
+                </div>
+                <div>
+                    <input type="text" id="dato3_nombre" placeholder="Ingrese nombre del valor" value="Desarrollo intelectual">
+                    <input type="number" id="dato3_valor" placeholder="Ingrese un valor del 1 al 10">
+                </div>
+                <div>
+                    <input type="text" id="dato4_nombre" placeholder="Ingrese nombre del valor" value="Equilibrio emocional">
+                    <input type="number" id="dato4_valor" placeholder="Ingrese un valor del 1 al 10">
+                </div>
+                <div>
+                    <input type="text" id="dato5_nombre" placeholder="Ingrese nombre del valor" value="Propósito">
+                    <input type="number" id="dato5_valor" placeholder="Ingrese un valor del 1 al 10">
+                </div>
+                <div>
+                    <input type="text" id="dato6_nombre" placeholder="Ingrese nombre del valor" value="Finanzas">
+                    <input type="number" id="dato6_valor" placeholder="Ingrese un valor del 1 al 10">
+                </div>
+                <div>
+                    <input type="text" id="dato7_nombre" placeholder="Ingrese nombre del valor" value="Familia">
+                    <input type="number" id="dato7_valor" placeholder="Ingrese un valor del 1 al 10">
+                </div>
+                <div>
+                    <input type="text" id="dato8_nombre" placeholder="Ingrese nombre del valor" value="Amor / Relaciones">
+                    <input type="number" id="dato8_valor" placeholder="Ingrese un valor del 1 al 10">
+                </div>
+                <div>
+                    <input type="text" id="dato9_nombre" placeholder="Ingrese nombre del valor" value="Social">
+                    <input type="number" id="dato9_valor" placeholder="Ingrese un valor del 1 al 10">
+                </div>
+                <div>
+                    <input type="text" id="dato10_nombre" placeholder="Ingrese nombre del valor" value="Ocio">
+                    <input type="number" id="dato10_valor" placeholder="Ingrese un valor del 1 al 10">
+                </div>
+                <div>
+                    <input type="text" id="dato11_nombre" placeholder="Ingrese nombre del valor" value="Plenitud">
+                    <input type="number" id="dato11_valor" placeholder="Ingrese un valor del 1 al 10">
+                </div>
+                <div>
+                    <input type="text" id="dato12_nombre" placeholder="Ingrese nombre del valor" value="Contribución al Mundo">
+                    <input type="number" id="dato12_valor" placeholder="Ingrese un valor del 1 al 10">
+                </div>                
+            </form>
+            
+            <div id="grafica">
+                    <canvas id="polarChart"></canvas>
+            </div>
+       
+        
+    </section>
+    
+    <div class="botones">
+        <button type="button" id="boton">Actualizar gráfica</button>
+        <button id="descargarPdf">Descargar Imagen</button>
+    </div>
+    <section class="final">
+        <h3 class="felicitaciones">
+            ¡Felicitaciones, tu rueda de la vida está lista! 
+            <br>
+            <br>
+            ¿Y ahora?
+        </h3>
+
+        <p>
+            Con la rueda de la vida lista, podrás comparar cada zona de tu vida con la puntuación que consideres ideal en cada categoría. Utilice esta herramienta identificar áreas de desequilibrio y decidir qué cambios y acciones son necesarios para encontrar el equilibrio.
+
+            Puedes salvar tu rueda de la vida y, de vez en cuando, rehacer este ejercicio y comparar los resultados.
+        </p>
+
+    </section>
+    </section>
+
+    
+</body>
+</html>
